@@ -1,27 +1,28 @@
-# AngularTaskList
+# Angular-Task-List
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+I wanted to start the summer off strong with an Angular refresher course. Because of that, I built a Task/To-do list!
 
-## Development server
+![Homescreen](img/default.PNG)
+![New Form Field](img/add-form.PNG)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## How does it work?
 
-## Code scaffolding
+It uses *Angular.js* and reads/writes to a database (or should a say a fake one) AKA `db.json` using the node package, [json-server](https://www.npmjs.com/package/json-server).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Tasks can be created or deleted from the database via the front end.
 
-## Build
+Additional functionality also includes:
+- Double clicking a Task card to enable a "reminder" (left hand sign turns green).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## How can I demo this project?
 
-## Running unit tests
+1. Clone the repository.
+2. Make sure you have [Angular](https://angular.io/)
+3. Install the dependencies (should only be [json-server](https://www.npmjs.com/package/json-server)). Use npm.
+4. Launch the database with `npm run server`.
+5. Launch the Angular application with `ng serve`.
+6. Happy tasking!
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Some modules have errors, but the application runs fine. What gives?
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+In `tsconfig.json`, I have `"strictPropertyInitialization": false`.
