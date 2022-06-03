@@ -12,7 +12,7 @@ It uses *Angular.js* and reads/writes to a database (or should a say a fake one)
 Tasks can be created or deleted from the database via the front end.
 
 Additional functionality also includes:
-- Double clicking a Task card to enable a "reminder" (left hand sign turns green).
+- Double clicking a Task card to enable a "reminder" (left hand side turns green).
 
 ## How can I demo this project?
 
